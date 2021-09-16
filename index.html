@@ -7,7 +7,26 @@
     <title>Survey form</title>
 </head>
 <body>
-    <h1>Hello this is a test message</h1>
-    <h2>this is a another test message</h2>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill this Form To continue</p>
+    <form action="" id="survey-form">
+        
+       <label for="name" id="name-label">Name:</label>  
+       <input type="text" name="name" id="name" placeholder="Enter Your Name" required> <br>
+       <label for="email" id="email-label">Email:</label>  
+       <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required> <br>
+       <label for="number" id="number-label">Phone No:</label> 
+       <input type="number" name="number" id="number" min="1" max="10" placeholder="Enter Your Phone Number" required> <br>
+       <select name="job" id="dropdown">
+           <option value="engineer">engineer</option>
+           <option value="doctor">doctor</option>
+           <option value="architect">architect</option>
+           <option value="pilot">pilot</option>
+           <option value="teacher">teacher</option>
+        </select>
+
+       <input type="submit" value="submitted">
+    </form>
+    <script  src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
