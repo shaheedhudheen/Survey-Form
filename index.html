@@ -2,97 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey form</title>
   </head>
   <body>
     <header>
-    <!-- title -->
-    <h1 id="title">Survey Form</h1>
-    <!-- description -->
-    <p id="description">Please fill this Form To continue</p>
+      <!-- title -->
+      <h1 id="title">Survey Form</h1>
+      <!-- description -->
+      <p id="description">Please fill this Form To continue</p>
     </header>
 
     <main>
-    <!-- form -->
-    <form action="" id="survey-form">
-      <!-- inputs- mail, text, number etc... -->
-      <label for="name" id="name-label">Name:</label>
-      <input
-        class="form-input"
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Enter Your Name"
-        required
-      />
-      <br />
-      <label for="email" id="email-label">Email:</label>
-      <input
-        class="form-input"
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter Your Email Address"
-        required
-      />
-      <br />
-      <label for="number" id="number-label">Phone No:</label>
-      <input
-        class="form-input"
-        type="number"
-        name="number"
-        id="number"
-        min="1"
-        max="10"
-        placeholder="Enter Your Phone Number"
-        required
-      />
-      <br />
-      <!-- dropdown -->
-      <label for="job" id="dropdown-label">Select your Job:</label>
-      <select name="job" id="dropdown" class="dropdown">
-        <option value="engineer">engineer</option>
-        <option value="doctor">doctor</option>
-        <option value="architect">architect</option>
-        <option value="pilot">pilot</option>
-        <option value="teacher">teacher</option>
-      </select>
-      <!-- radio -->
-      <div class="radio-class" >
-      <p id="radio-label">Gender:</p>
-      <label for="male">Male</label>
-      <input type="radio" name="gender" id="male" value="male" />
-      <label for="female">Female</label>
-      <input type="radio" name="gender" id="female" value="female" />
-      <label for="others">Others</label>
-      <input type="radio" name="gender" id="others" value="others" />
-      <br />
-      </div>
-      <!-- checkbox -->
-      <div class="checkbox-class">
-      <p>Select your skills</p>
-      <input type="checkbox" name="photography" id="photography" value="photography" />
-      <label for="photography">photography</label>
-      <input type="checkbox" name="coding" id="coding" value="coding"/>
-      <label for="coding">Coding</label>
-      <input type="checkbox" name="writting" id="writting" value="writting"/>
-      <label for="writting">Writting</label>
-      <input type="checkbox" name="drawing" id="drawing" value="drawing"/>
-      <label for="drawing">Drawing</label>
-      <input type="checkbox" name="communication" id="communication" value="communication"/>
-      <label for="communication">Communication</label>
-       <br>
-      </div>
-      <!-- textarea -->
-      <p id="comments-label">Comments or Suggestions:</p>
-      <textarea name="comments" id="textarea" rows="5" cols="45"></textarea> <br>
+      <!-- form -->
+      <form action="" id="survey-form">
+        <!-- inputs- mail, text, number etc... -->
+        <label for="name" id="name-label">Name:</label>
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Your Name"
+          required
+        />
+        <br />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email Address"
+          required
+        />
+        <br />
+        <label for="number" id="number-label">Phone No:</label>
+        <input
+          class="form-input"
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="10"
+          placeholder="Enter Your Phone Number"
+          required
+        />
+        <br />
+        <!-- dropdown -->
+        <label for="job" id="dropdown-label">Select your Job:</label>
+        <select name="job" id="dropdown" class="dropdown">
+          <option value="engineer">engineer</option>
+          <option value="doctor">doctor</option>
+          <option value="architect">architect</option>
+          <option value="pilot">pilot</option>
+          <option value="teacher">teacher</option>
+        </select>
+        <!-- radio -->
+        <div class="radio-class">
+          <p id="radio-label">Gender:</p>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="others">Others</label>
+          <input type="radio" name="gender" id="others" value="others" />
+          <br />
+        </div>
+        <!-- checkbox -->
+        <div class="checkbox-class">
+          <p>Select your skills</p>
+          <input
+            type="checkbox"
+            name="photography"
+            id="photography"
+            value="photography"
+          />
+          <label for="photography">photography</label>
+          <input type="checkbox" name="coding" id="coding" value="coding" />
+          <label for="coding">Coding</label>
+          <input
+            type="checkbox"
+            name="writting"
+            id="writting"
+            value="writting"
+          />
+          <label for="writting">Writting</label>
+          <input type="checkbox" name="drawing" id="drawing" value="drawing" />
+          <label for="drawing">Drawing</label>
+          <input
+            type="checkbox"
+            name="communication"
+            id="communication"
+            value="communication"
+          />
+          <label for="communication">Communication</label>
+          <br />
+        </div>
+        <!-- textarea -->
+        <p id="comments-label">Comments or Suggestions:</p>
+        <textarea name="comments" id="textarea" rows="5" cols="45"></textarea>
+        <br />
 
-      <button type="submit" id="submit">Submit</button>
-    </form>
+        <button type="submit" id="submit">Submit</button>
+      </form>
     </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
